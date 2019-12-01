@@ -1,0 +1,544 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L power:VCC #PWR02
+U 1 1 5DCE66C7
+P 2300 3600
+F 0 "#PWR02" H 2300 3450 50  0001 C CNN
+F 1 "VCC" H 2317 3773 50  0000 C CNN
+F 2 "" H 2300 3600 50  0001 C CNN
+F 3 "" H 2300 3600 50  0001 C CNN
+	1    2300 3600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Diode:1N4148 D1
+U 1 1 5DCFE7BC
+P 5650 3400
+F 0 "D1" H 5600 3300 50  0000 C CNN
+F 1 "1N4148" H 5850 3300 50  0000 C CNN
+F 2 "Diodes_THT:D_DO-35_SOD27_P7.62mm_Horizontal" H 5650 3225 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/1N4148_1N4448.pdf" H 5650 3400 50  0001 C CNN
+	1    5650 3400
+	-1   0    0    1   
+$EndComp
+$Comp
+L Diode:1N4148 D2
+U 1 1 5DD0021A
+P 5650 3650
+F 0 "D2" H 5650 3550 50  0000 C CNN
+F 1 "1N4148" H 5850 3600 50  0000 C CNN
+F 2 "Diodes_THT:D_DO-35_SOD27_P7.62mm_Horizontal" H 5650 3475 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/1N4148_1N4448.pdf" H 5650 3650 50  0001 C CNN
+	1    5650 3650
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	4150 3450 4100 3450
+Wire Wire Line
+	4100 3450 4100 3750
+Connection ~ 4100 3750
+Wire Wire Line
+	4100 3750 6950 3750
+Wire Wire Line
+	4150 3250 4050 3250
+Wire Wire Line
+	4050 3250 4050 4050
+Connection ~ 4050 4050
+Wire Wire Line
+	4050 4050 6950 4050
+Wire Wire Line
+	4150 3050 4000 3050
+Wire Wire Line
+	4000 3050 4000 3950
+Connection ~ 4000 3950
+Wire Wire Line
+	4000 3950 6950 3950
+Wire Wire Line
+	4150 2850 3950 2850
+Wire Wire Line
+	3950 2850 3950 3850
+Connection ~ 3950 3850
+Wire Wire Line
+	3950 3850 6950 3850
+Wire Wire Line
+	6800 4550 6800 2850
+Wire Wire Line
+	6800 2850 6950 2850
+Wire Wire Line
+	3900 4550 3900 2550
+Wire Wire Line
+	3900 2550 4150 2550
+Connection ~ 3900 4550
+Wire Wire Line
+	3900 4550 6800 4550
+$Comp
+L power:VCC #PWR06
+U 1 1 5DD7A9CF
+P 4800 2250
+F 0 "#PWR06" H 4800 2100 50  0001 C CNN
+F 1 "VCC" H 4817 2423 50  0000 C CNN
+F 2 "" H 4800 2250 50  0001 C CNN
+F 3 "" H 4800 2250 50  0001 C CNN
+	1    4800 2250
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR07
+U 1 1 5DD7AEAB
+P 4450 2100
+F 0 "#PWR07" H 4450 1850 50  0001 C CNN
+F 1 "GND" H 4455 1927 50  0000 C CNN
+F 2 "" H 4450 2100 50  0001 C CNN
+F 3 "" H 4450 2100 50  0001 C CNN
+	1    4450 2100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5150 3400 5500 3400
+Wire Wire Line
+	5150 3000 6600 3000
+Wire Wire Line
+	6600 3000 6600 3450
+Wire Wire Line
+	6600 3450 6950 3450
+Wire Wire Line
+	5150 3200 6700 3200
+Wire Wire Line
+	6700 3200 6700 3350
+Wire Wire Line
+	6700 3350 6950 3350
+Wire Wire Line
+	6950 2950 6850 2950
+Wire Wire Line
+	6850 2950 6850 2800
+Wire Wire Line
+	6850 2800 5150 2800
+$Comp
+L Interface:8255 U2
+U 1 1 5DCDA9AC
+P 7650 3850
+F 0 "U2" H 7400 5650 50  0000 C CNN
+F 1 "8255" H 7450 5550 50  0000 C CNN
+F 2 "Housings_DIP:DIP-40_W15.24mm_Socket_LongPads" H 7650 4150 50  0001 C CNN
+F 3 "http://aturing.umcs.maine.edu/~meadow/courses/cos335/Intel8255A.pdf" H 7650 4150 50  0001 C CNN
+	1    7650 3850
+	1    0    0    -1  
+$EndComp
+NoConn ~ 5150 2900
+NoConn ~ 5150 3100
+NoConn ~ 5150 3300
+NoConn ~ 5150 3500
+$Comp
+L power:GND #PWR09
+U 1 1 5DDE8E90
+P 6800 2350
+F 0 "#PWR09" H 6800 2100 50  0001 C CNN
+F 1 "GND" H 6805 2177 50  0000 C CNN
+F 2 "" H 6800 2350 50  0001 C CNN
+F 3 "" H 6800 2350 50  0001 C CNN
+	1    6800 2350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6950 2550 6950 2350
+$Comp
+L power:VCC #PWR010
+U 1 1 5DDFCF7D
+P 7650 2200
+F 0 "#PWR010" H 7650 2050 50  0001 C CNN
+F 1 "VCC" H 7667 2373 50  0000 C CNN
+F 2 "" H 7650 2200 50  0001 C CNN
+F 3 "" H 7650 2200 50  0001 C CNN
+	1    7650 2200
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR011
+U 1 1 5DDFD49B
+P 7650 5450
+F 0 "#PWR011" H 7650 5200 50  0001 C CNN
+F 1 "GND" H 7655 5277 50  0000 C CNN
+F 2 "" H 7650 5450 50  0001 C CNN
+F 3 "" H 7650 5450 50  0001 C CNN
+	1    7650 5450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5800 3400 5800 3650
+Wire Wire Line
+	6100 3050 6100 3400
+Wire Wire Line
+	6100 3400 5800 3400
+Wire Wire Line
+	6100 3050 6250 3050
+Connection ~ 5800 3400
+$Comp
+L Device:R R1
+U 1 1 5DE03DE2
+P 6250 3400
+F 0 "R1" H 6320 3446 50  0000 L CNN
+F 1 "R10k" H 6320 3355 50  0000 L CNN
+F 2 "Resistors_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" V 6180 3400 50  0001 C CNN
+F 3 "~" H 6250 3400 50  0001 C CNN
+	1    6250 3400
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR08
+U 1 1 5DE054F3
+P 6250 3550
+F 0 "#PWR08" H 6250 3300 50  0001 C CNN
+F 1 "GND" H 6255 3377 50  0000 C CNN
+F 2 "" H 6250 3550 50  0001 C CNN
+F 3 "" H 6250 3550 50  0001 C CNN
+	1    6250 3550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6250 3250 6250 3050
+Connection ~ 6250 3050
+Wire Wire Line
+	6250 3050 6950 3050
+Wire Wire Line
+	7650 2200 7650 2250
+$Comp
+L Connector:Screw_Terminal_01x08 J2
+U 1 1 5DE0B16D
+P 8700 2850
+F 0 "J2" H 8780 2842 50  0000 L CNN
+F 1 "Screw_Terminal_01x08" H 8780 2751 50  0000 L CNN
+F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MPT-2.54mm_8pol" H 8700 2850 50  0001 C CNN
+F 3 "~" H 8700 2850 50  0001 C CNN
+	1    8700 2850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Screw_Terminal_01x08 J3
+U 1 1 5DE0C88A
+P 8700 3750
+F 0 "J3" H 8780 3742 50  0000 L CNN
+F 1 "Screw_Terminal_01x08" H 8780 3651 50  0000 L CNN
+F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MPT-2.54mm_8pol" H 8700 3750 50  0001 C CNN
+F 3 "~" H 8700 3750 50  0001 C CNN
+	1    8700 3750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Screw_Terminal_01x08 J4
+U 1 1 5DE0D33B
+P 8700 4650
+F 0 "J4" H 8780 4642 50  0000 L CNN
+F 1 "Screw_Terminal_01x08" H 8780 4551 50  0000 L CNN
+F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MPT-2.54mm_8pol" H 8700 4650 50  0001 C CNN
+F 3 "~" H 8700 4650 50  0001 C CNN
+	1    8700 4650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8350 2550 8500 2550
+Wire Wire Line
+	8350 2650 8500 2650
+Wire Wire Line
+	8350 2750 8500 2750
+Wire Wire Line
+	8350 2850 8500 2850
+$Comp
+L Connector:Screw_Terminal_01x08 J5
+U 1 1 5DE19746
+P 8700 5550
+F 0 "J5" H 8780 5542 50  0000 L CNN
+F 1 "Screw_Terminal_01x08" H 8780 5451 50  0000 L CNN
+F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MPT-2.54mm_8pol" H 8700 5550 50  0001 C CNN
+F 3 "~" H 8700 5550 50  0001 C CNN
+	1    8700 5550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8350 3750 8500 3750
+Wire Wire Line
+	8350 3850 8500 3850
+Wire Wire Line
+	8350 3950 8500 3950
+Wire Wire Line
+	8350 4050 8500 4050
+Wire Wire Line
+	8350 4150 8500 4150
+Wire Wire Line
+	8350 4750 8500 4750
+Wire Wire Line
+	8350 4850 8500 4850
+Wire Wire Line
+	8350 4950 8500 4950
+Wire Wire Line
+	8350 5050 8500 5050
+Wire Wire Line
+	8500 5250 8500 5350
+Wire Wire Line
+	8500 5450 8500 5550
+Wire Wire Line
+	8500 5450 8500 5350
+Connection ~ 8500 5450
+Connection ~ 8500 5350
+Wire Wire Line
+	8500 5650 8500 5750
+Wire Wire Line
+	8500 5850 8500 5750
+Connection ~ 8500 5750
+Wire Wire Line
+	8500 5950 8500 5850
+Connection ~ 8500 5850
+$Comp
+L power:GND #PWR015
+U 1 1 5DE476C7
+P 8350 5750
+F 0 "#PWR015" H 8350 5500 50  0001 C CNN
+F 1 "GND" H 8355 5577 50  0000 C CNN
+F 2 "" H 8350 5750 50  0001 C CNN
+F 3 "" H 8350 5750 50  0001 C CNN
+	1    8350 5750
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VCC #PWR014
+U 1 1 5DE48072
+P 8350 5450
+F 0 "#PWR014" H 8350 5300 50  0001 C CNN
+F 1 "VCC" H 8367 5623 50  0000 C CNN
+F 2 "" H 8350 5450 50  0001 C CNN
+F 3 "" H 8350 5450 50  0001 C CNN
+	1    8350 5450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8350 5450 8500 5450
+Wire Wire Line
+	8350 5750 8500 5750
+Wire Wire Line
+	6950 2350 6800 2350
+$Comp
+L power:GND #PWR03
+U 1 1 5DCE6D38
+P 2600 4750
+F 0 "#PWR03" H 2600 4500 50  0001 C CNN
+F 1 "GND" H 2605 4577 50  0000 C CNN
+F 2 "" H 2600 4750 50  0001 C CNN
+F 3 "" H 2600 4750 50  0001 C CNN
+	1    2600 4750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3650 4550 3900 4550
+Wire Wire Line
+	3650 4450 6950 4450
+Wire Wire Line
+	3650 4350 6950 4350
+Wire Wire Line
+	3650 4250 6950 4250
+Wire Wire Line
+	3650 4150 6950 4150
+Wire Wire Line
+	3650 4050 4050 4050
+Wire Wire Line
+	3650 3950 4000 3950
+Wire Wire Line
+	3650 3850 3950 3850
+Wire Wire Line
+	3650 3750 4100 3750
+$Comp
+L power:GND #PWR013
+U 1 1 5DF4648B
+P 3700 4750
+F 0 "#PWR013" H 3700 4500 50  0001 C CNN
+F 1 "GND" H 3705 4577 50  0000 C CNN
+F 2 "" H 3700 4750 50  0001 C CNN
+F 3 "" H 3700 4750 50  0001 C CNN
+	1    3700 4750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3650 4650 3700 4650
+Wire Wire Line
+	3700 4650 3700 4750
+$Comp
+L power:GND #PWR012
+U 1 1 5DF62DB5
+P 3400 3050
+F 0 "#PWR012" H 3400 2800 50  0001 C CNN
+F 1 "GND" H 3405 2877 50  0000 C CNN
+F 2 "" H 3400 3050 50  0001 C CNN
+F 3 "" H 3400 3050 50  0001 C CNN
+	1    3400 3050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3400 3050 3650 3050
+$Comp
+L hackup-commodore:C64-UserPort J1
+U 1 1 5DD51C32
+P 3150 4450
+F 0 "J1" H 3150 5597 60  0000 C CNN
+F 1 "C64-UserPort" H 3150 5491 60  0000 C CNN
+F 2 "Hackup_Commodore:C64-User-Port-Female" H 3150 5500 60  0001 C CNN
+F 3 "~" H 3150 3600 60  0001 C CNN
+	1    3150 4450
+	-1   0    0    -1  
+$EndComp
+NoConn ~ 2650 4550
+NoConn ~ 2650 4450
+NoConn ~ 2650 4150
+NoConn ~ 2650 4050
+NoConn ~ 2650 3950
+NoConn ~ 2650 3850
+NoConn ~ 2650 3750
+Wire Wire Line
+	2600 4750 2600 4650
+Wire Wire Line
+	2600 4650 2650 4650
+Wire Wire Line
+	2300 3600 2300 3650
+Wire Wire Line
+	2300 3650 2650 3650
+$Comp
+L power:GND #PWR016
+U 1 1 5DDEFD12
+P 2900 3050
+F 0 "#PWR016" H 2900 2800 50  0001 C CNN
+F 1 "GND" H 2905 2877 50  0000 C CNN
+F 2 "" H 2900 3050 50  0001 C CNN
+F 3 "" H 2900 3050 50  0001 C CNN
+	1    2900 3050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2650 3050 2900 3050
+Wire Wire Line
+	2650 3050 2650 3550
+Wire Wire Line
+	3650 3050 3650 3550
+Wire Wire Line
+	3000 2100 3000 2250
+Wire Wire Line
+	2450 2100 2450 2250
+$Comp
+L power:VCC #PWR04
+U 1 1 5DCE2E93
+P 3000 2250
+F 0 "#PWR04" H 3000 2100 50  0001 C CNN
+F 1 "VCC" H 3018 2423 50  0000 C CNN
+F 2 "" H 3000 2250 50  0001 C CNN
+F 3 "" H 3000 2250 50  0001 C CNN
+	1    3000 2250
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR01
+U 1 1 5DCE201C
+P 2450 2250
+F 0 "#PWR01" H 2450 2000 50  0001 C CNN
+F 1 "GND" H 2455 2077 50  0000 C CNN
+F 2 "" H 2450 2250 50  0001 C CNN
+F 3 "" H 2450 2250 50  0001 C CNN
+	1    2450 2250
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:PWR_FLAG #FLG02
+U 1 1 5DCE1B46
+P 3000 2100
+F 0 "#FLG02" H 3000 2175 50  0001 C CNN
+F 1 "PWR_FLAG" H 3000 2273 50  0000 C CNN
+F 2 "" H 3000 2100 50  0001 C CNN
+F 3 "~" H 3000 2100 50  0001 C CNN
+	1    3000 2100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:PWR_FLAG #FLG01
+U 1 1 5DCE10DD
+P 2450 2100
+F 0 "#FLG01" H 2450 2175 50  0001 C CNN
+F 1 "PWR_FLAG" H 2450 2273 50  0000 C CNN
+F 2 "" H 2450 2100 50  0001 C CNN
+F 3 "~" H 2450 2100 50  0001 C CNN
+	1    2450 2100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4800 2250 4800 2500
+Wire Wire Line
+	4450 2100 4450 2000
+Wire Wire Line
+	4450 2000 4700 2000
+Wire Wire Line
+	4700 2000 4700 2500
+$Comp
+L 4xxx_IEEE:4042 U1
+U 1 1 5DCDBDCE
+P 4650 3000
+F 0 "U1" H 4650 3750 50  0000 C CNN
+F 1 "4042" H 4650 3650 50  0000 C CNN
+F 2 "Housings_DIP:DIP-16_W7.62mm_Socket_LongPads" H 4650 3000 50  0001 C CNN
+F 3 "" H 4650 3000 50  0001 C CNN
+	1    4650 3000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VCC #PWR0101
+U 1 1 5DE34C2F
+P 4150 2650
+F 0 "#PWR0101" H 4150 2500 50  0001 C CNN
+F 1 "VCC" H 4167 2823 50  0000 C CNN
+F 2 "" H 4150 2650 50  0001 C CNN
+F 3 "" H 4150 2650 50  0001 C CNN
+	1    4150 2650
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	5500 3650 4450 3650
+Wire Wire Line
+	4450 3650 4450 5050
+Wire Wire Line
+	4450 5050 2350 5050
+Wire Wire Line
+	2350 5050 2350 4250
+Wire Wire Line
+	2350 4250 2650 4250
+NoConn ~ 2650 4350
+NoConn ~ 3650 3650
+Wire Wire Line
+	8350 3650 8500 3450
+Wire Wire Line
+	8350 3450 8500 3650
+Wire Wire Line
+	8350 3550 8500 3550
+Wire Wire Line
+	8350 4650 8500 4350
+Wire Wire Line
+	8350 4550 8500 4450
+Wire Wire Line
+	8350 4450 8500 4550
+Wire Wire Line
+	8350 4350 8500 4650
+Wire Wire Line
+	8350 3250 8500 2950
+Wire Wire Line
+	8350 2950 8500 3250
+Wire Wire Line
+	8350 3150 8500 3050
+Wire Wire Line
+	8350 3050 8500 3150
+$EndSCHEMATC
