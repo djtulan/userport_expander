@@ -1,9 +1,11 @@
-# userport_expander
+# Userport Expander
 C64 Userport Expander
+This is a remake of a project a "64'er Sonderheft" magazine.
 
 ![3d Picture](images/userport_expander.png)
 
 The C64 Userport Expander expands the C64 Userport from 8 Bit to 3x8bit.
+![real Picture](images/IMG_20200216_150418.jpg)
 
 ## Layout and PCB
 The whole KiCad project is provided inside subfolder ["kicad"](./kicad).
