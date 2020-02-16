@@ -1,6 +1,8 @@
 # Userport Expander
 C64 Userport Expander
-This is a remake of a project a "64'er Sonderheft" magazine.
+This is a remake of a project from a "64'er Sonderheft" magazine.
+You can find the scan (german language) [here](./docs/UP 24 Leitungen_k.pdf).
+The driver software can be found [here](./Software/SH67.zip).
 
 ![3d Picture](images/userport_expander.png)
 
