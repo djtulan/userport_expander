@@ -5,10 +5,11 @@ You can find the scan (german language) [here](./docs/UP%2024%20Leitungen_k.pdf)
 
 The driver software can be found [here](./Software/SH67.zip).
 
+The C64 Userport Expander expands the C64 Userport from 8 Bit to 3x8bit.
+
 ## 3D Model
 ![3d Picture](images/userport_expander.png)
 
-The C64 Userport Expander expands the C64 Userport from 8 Bit to 3x8bit.
 
 ## Real Picture
 ![real Picture](images/IMG_20200216_150418.jpg)
